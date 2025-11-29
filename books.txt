@@ -1,0 +1,4 @@
+title,author,genre,cost,length,pages,booktype
+"the hobbit","jrr tolkein","fantasy",6000,"N/A",600,printedBook
+"harry potter","jkr","fantasy",300,60,"N/A",audioBook
+"cat in the hat","dr seuss","childrens",150,"N/A",15,printedBook
