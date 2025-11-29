@@ -80,10 +80,7 @@ public class PrintedBook extends Book {
         System.out.println("=================================\n");
     }
 
-    /**
-     * Detailed string representation
-     * @return Formatted string with all details
-     */
+   
     public String toDetailedString() {
         return String.format("[PRINTED] %s by %s | Genre: %s | Pages: %d | Cost: $%.2f",
                 getTitle(), getAuthor(), getGenre(), numberOfPages, getCost());

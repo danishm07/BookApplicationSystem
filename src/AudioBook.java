@@ -1,12 +1,9 @@
 import java.util.*;
 
-/**
- * Concrete class representing audiobooks
- * Demonstrates INHERITANCE - extends Book
- */
+
 public class AudioBook extends Book {
 
-    // ENCAPSULATION - private instance field
+    
     private int lengthInMinutes;
     private static int totalLength = 0;
     private static int audioBookCount = 0;
@@ -15,7 +12,7 @@ public class AudioBook extends Book {
     private static final double COST_PER_MINUTE = 5.0;
 
     public AudioBook(String title, String author, String genre, int lengthInMinutes) {
-        super(title, author, genre); // INHERITANCE - call parent constructor
+        super(title, author, genre); 
         this.lengthInMinutes = lengthInMinutes;
 
         // Update static counters
@@ -41,7 +38,7 @@ public class AudioBook extends Book {
         lastThreeAudio.offer(this); // Add newest
     }
 
-    // ENCAPSULATION - Getter
+    
     public int getLengthInMinutes() {
         return lengthInMinutes;
     }
@@ -58,7 +55,7 @@ public class AudioBook extends Book {
     public static double getTotalAudioBookCost() {
         double total = 0.0;
         for (Book book : Book.getAllBooks()) {
-            if (book instanceof AudioBook) { // POLYMORPHISM - type checking
+            if (book instanceof AudioBook) { 
                 total += book.getCost();
             }
         }

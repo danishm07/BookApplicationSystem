@@ -34,7 +34,7 @@ public class FileManager {
 
         } catch (IOException e) {
             System.err.println("✗ Error writing to file: " + e.getMessage());
-            throw e; // Re-throw for caller to handle
+            throw e; 
         }
     }
 
@@ -95,7 +95,6 @@ public class FileManager {
         String title = parts[0];
         String author = parts[1];
         String genre = parts[2];
-        // parts[3] is cost (we'll recalculate it)
         String lengthStr = parts[4];  // length or "N/A"
         String pagesStr = parts[5];   // pages or "N/A"
         String bookType = parts[6];   // "printedBook" or "audioBook"
